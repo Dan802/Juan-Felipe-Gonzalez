@@ -12,7 +12,7 @@ export default function Banner() {
       className="bg-cover bg-center shadow-[1px_8px_10px_-4px_rgba(0,0,0,0.67)]"
       style={{ backgroundImage: `url(${fondo3Img})` }}
     >
-      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full flex flex-col pt-20 px-6 pb-12 h-[calc(100vh-30rem)] md:h-[calc(100vh-65rem)]">
+      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full flex flex-col pt-20 px-6 pb-12 h-[calc(100vh-60rem)] md:h-[calc(100vh-65rem)]">
         <h1 className="mb-10 text-4xl md:text-6xl font-black text-white">
           Juan Felipe González
         </h1>

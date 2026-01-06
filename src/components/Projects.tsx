@@ -9,11 +9,11 @@ export default function Projects() {
 
   return (
     <>
-      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full">
+      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full" id="projects">
         <h2 className="mb-10 text-3xl md:text-5xl font-black text-white mt-12">
           {translation.developer.projects}
         </h2>
-        <p className="text-[1.7rem] md:text-[2rem] text-[#6b7280] leading-[1.8]">
+        <p className="text-[1.7rem] md:text-[2rem] text-white leading-[1.8] mb-7">
           {translation.developer.projectsDescription}
         </p>
 

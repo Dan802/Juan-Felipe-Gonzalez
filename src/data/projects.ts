@@ -10,6 +10,7 @@ export type Project = {
   url: string;
   image: string;
   technologies: string[];
+  github: string;
   isTeamProject?: boolean;
 }
 
@@ -20,6 +21,7 @@ export const developerProjects: Project[] = [
     url: 'https://music-asthetic.netlify.app/',
     image: musicImg,
     technologies: ['html-5', 'Sass Logo (Color)-01', 'JavaScript'],
+    github: 'https://www.google.com',
   },
   {
     id: 'coffee',
@@ -27,6 +29,7 @@ export const developerProjects: Project[] = [
     url: 'https://colombian-coffee.netlify.app/',
     image: coffeBlogImg,
     technologies: ['html-5', 'Sass Logo (Color)-01', 'JavaScript'],
+    github: 'https://www.google.com',
   },
   {
     id: 'rockfestival',
@@ -34,6 +37,7 @@ export const developerProjects: Project[] = [
     url: 'https://cuartetodenos-festival.netlify.app/',
     image: rockFestivalImg,
     technologies: ['html-5', 'Sass Logo (Color)-01', 'JavaScript'],
+    github: 'https://www.google.com',
   },
 ];
 
@@ -44,6 +48,7 @@ export const teamProjects: Project[] = [
     url: 'https://tetrislatam.com',
     image: latamTetrisImg,
     technologies: ['html-5', 'css3', 'JavaScript', 'Vue.js'],
+    github: 'https://www.google.com',
     isTeamProject: true,
   },
   {
@@ -52,6 +57,7 @@ export const teamProjects: Project[] = [
     url: 'https://morenofoundation.org/',
     image: franciscoImg,
     technologies: ['html-5', 'css3', 'WordPress'],
+    github: 'https://www.google.com',
     isTeamProject: true,
   },
 ];

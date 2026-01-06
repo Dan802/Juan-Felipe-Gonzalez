@@ -8,9 +8,9 @@ export default function DeveloperPage() {
   return (
     <div className='flex flex-col space-y-16'>
       <Banner />
+      <About />
       <Projects/>
       <Skills />
-      <About />
     </div>
   );
 }

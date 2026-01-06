@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { translations } from '../data/translations';
-import logoImg from '../assets/img/Logo.webp';
+// import logoImg from '../assets/img/Logo.webp';
 import flagEn from '../assets/img/18165.webp';
 import flagEs from '../assets/img/18168.webp';
 
@@ -27,17 +28,13 @@ export default function Header() {
   const otherLang = language === 'en' ? 'es' : 'en';
 
   return (
-    <header className="bg-[#2a2c30] shadow-[1px_10px_10px_-4px_rgba(0,0,0,0.7)] h-28 md:h-40">
-      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full flex items-center justify-between h-full md:px-2 md:justify-evenly">
-        <a href="/">
-          <img
-            src={logoImg}
-            alt="Juan Felipe González Logo"
-            className="h-full max-h-[3.8rem] w-auto md:max-h-28 md:p-4"
-            height="14"
-            width="108"
-          />
-        </a>
+    <header className="bg-[#2a2c30] shadow-[1px_10px_10px_-4px_rgba(0,0,0,0.7)] h-auto md:h-40">
+      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full flex items-center justify-evenly h-full md:px-2 md:justify-evenly">
+        <nav className='flex gap-4 md:gap-20 flex-col md:flex-row m-7 md:m-0'>
+          <Link to="#aboutMe" className='text-white font-bold'>{translation.nav.aboutMe}</Link>
+          <Link to="#projects" className='text-white font-bold'>{translation.nav.projects}</Link>
+          <Link to="#stack" className='text-white font-bold'>{translation.nav.stack}</Link>
+        </nav>
 
         <div className="relative" ref={dropdownRef}>
           <button
@@ -53,7 +50,7 @@ export default function Header() {
           </button>
 
           <div
-            className={`absolute z-[999] top-[120%] p-6 rounded-lg bg-[#1e2022] text-white shadow-[0_10px_10px_0_rgba(0,0,0,0.4)] md:left-0 ${dropdownOpen ? '' : 'hidden'} flex flex-col items-center`}
+            className={`absolute z-999 top-[120%] p-6 rounded-lg bg-[#1e2022] text-white shadow-[0_10px_10px_0_rgba(0,0,0,0.4)] md:left-0 ${dropdownOpen ? '' : 'hidden'} flex flex-col items-center`}
           >
             <button
               onClick={() => {

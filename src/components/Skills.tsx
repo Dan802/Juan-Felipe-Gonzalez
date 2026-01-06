@@ -45,7 +45,7 @@ export default function Skills() {
   };
 
   return (
-    <main className="w-[95%] max-w-[1200px] mx-auto lg:w-full">
+    <main className="w-[95%] max-w-[1200px] mx-auto lg:w-full" id='stack'>
       <h2 className="mb-10 text-3xl md:text-5xl font-black text-white mt-12">
         {translation.developer.stack}
       </h2>
