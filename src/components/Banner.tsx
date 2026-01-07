@@ -12,7 +12,7 @@ export default function Banner() {
       className="bg-cover bg-center shadow-[1px_8px_10px_-4px_rgba(0,0,0,0.67)]"
       style={{ backgroundImage: `url(${fondo3Img})` }}
     >
-      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full flex flex-col pt-20 px-6 pb-12 h-[calc(100vh-60rem)] md:h-[calc(100vh-65rem)]">
+      <div className="w-[95%] max-w-[1200px] mx-auto lg:w-full flex flex-col py-24 px-6">
         <h1 className="mb-10 text-4xl md:text-6xl font-black text-white">
           Juan Felipe González
         </h1>
@@ -22,7 +22,7 @@ export default function Banner() {
 
         <div className="w-[60%] md:flex justify-start gap-12">
           <a
-            className="flex items-center justify-center p-8 bg-[#061221] rounded-lg mb-10 shadow-[0_5px_9px_hsla(0,0%,100%,0.35)]"
+            className="flex items-center justify-center p-8 bg-[#061221] rounded-lg shadow-[0_5px_9px_hsla(0,0%,100%,0.35)]"
             href="https://www.linkedin.com/in/juan-felipe-gonzalez-backend/"
             target="_blank"
             rel="noopener noreferrer"
@@ -45,8 +45,6 @@ export default function Banner() {
           </a>
         </div>
       </div>
-
-
     </div>
   );
 }

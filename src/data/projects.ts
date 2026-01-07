@@ -3,6 +3,7 @@ import coffeBlogImg from '../assets/img/CoffeBlog.webp';
 import rockFestivalImg from '../assets/img/RockFestival.webp';
 import latamTetrisImg from '../assets/img/LatamTetris.webp';
 import franciscoImg from '../assets/img/Francisco Foundation.webp';
+import tierraViva from '../assets/img/tierraViva.jpg'
 
 export type Project = {
   id: string;
@@ -21,7 +22,7 @@ export const developerProjects: Project[] = [
     url: 'https://music-asthetic.netlify.app/',
     image: musicImg,
     technologies: ['html-5', 'Sass Logo (Color)-01', 'JavaScript'],
-    github: 'https://www.google.com',
+    github: 'https://github.com/Dan802/Music_UwU',
   },
   {
     id: 'coffee',
@@ -29,7 +30,7 @@ export const developerProjects: Project[] = [
     url: 'https://colombian-coffee.netlify.app/',
     image: coffeBlogImg,
     technologies: ['html-5', 'Sass Logo (Color)-01', 'JavaScript'],
-    github: 'https://www.google.com',
+    github: 'https://github.com/Dan802/Colombian-Coffee',
   },
   {
     id: 'rockfestival',
@@ -37,18 +38,27 @@ export const developerProjects: Project[] = [
     url: 'https://cuartetodenos-festival.netlify.app/',
     image: rockFestivalImg,
     technologies: ['html-5', 'Sass Logo (Color)-01', 'JavaScript'],
-    github: 'https://www.google.com',
+    github: 'https://github.com/Dan802/Cuarteto-de-Nos-Festival',
   },
 ];
 
 export const teamProjects: Project[] = [
+  {
+    id: 'tierraViva',
+    title: 'Tierra Viva',
+    url: 'https://github.com/TierraVivaa',
+    image: tierraViva,
+    technologies: ['html-5', 'css3', 'JavaScript'],
+    github: 'https://github.com/TierraVivaa',
+    isTeamProject: true,
+  },
   {
     id: 'tetrislatam',
     title: 'Tetris LATAM',
     url: 'https://tetrislatam.com',
     image: latamTetrisImg,
     technologies: ['html-5', 'css3', 'JavaScript', 'Vue.js'],
-    github: 'https://www.google.com',
+    github: '',
     isTeamProject: true,
   },
   {
@@ -57,7 +67,7 @@ export const teamProjects: Project[] = [
     url: 'https://morenofoundation.org/',
     image: franciscoImg,
     technologies: ['html-5', 'css3', 'WordPress'],
-    github: 'https://www.google.com',
+    github: '',
     isTeamProject: true,
   },
 ];
